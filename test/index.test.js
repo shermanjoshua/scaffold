@@ -1,3 +1,5 @@
+import helloThere from '../src/index';
+
 describe('Sample test', () => {
   it('Should be a string', () => {
     const foo = 'foo';
@@ -7,5 +9,11 @@ describe('Sample test', () => {
   it('Should be 3 characters long', () => {
     const foo = 'foo';
     foo.should.have.lengthOf(3);
+  });
+
+  it('Should have correct message', () => {
+    helloThere((message) => {
+      message.should.equal('Hello');
+    });
   });
 });
