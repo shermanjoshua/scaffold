@@ -1,5 +1,3 @@
 export default function helloThere() {
-  console.log('Hello');
+  return 'Hello';
 }
-
-helloThere();

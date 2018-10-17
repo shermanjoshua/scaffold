@@ -12,8 +12,7 @@ describe('Sample test', () => {
   });
 
   it('Should have correct message', () => {
-    helloThere((message) => {
-      message.should.equal('Hello');
-    });
+    const message = helloThere();
+    message.should.equal('Hello');
   });
 });
