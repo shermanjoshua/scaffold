@@ -1,6 +1,6 @@
 import helloThere from '../src/index';
 
-describe('Sample test', () => {
+describe('Sample tests', () => {
   it('Should be a string', () => {
     const foo = 'foo';
     foo.should.be.a('string');
